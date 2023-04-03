@@ -34,11 +34,9 @@ function Seo({description, lang, title, pathname, endpoint, index}) {
       <meta name="twitter:description" content={description}/>
       <meta name="robots" content={index}/>
       <meta name="google-site-verification" content="Ru5brt9NL0oMkvkLOxapstJ8x649cTwqEaRTSeQOTCE"/>
+      <meta name="monetag" content="42358d10292053f0c8a5e7cd95596289"/>
       <link rel='canonical' href={`https://yt1s.works${endpoint}`}/>
       {locales.map((locale) => (
-        locale.code === 'en' ?
-          <link rel="alternate" href={`https://yt1s.works${pathname}`} hrefLang={locale.code}
-                key={locale.code}/> :
           <link rel="alternate" href={`https://yt1s.works/${locale.code}${pathname}`} hrefLang={locale.code}
                 key={locale.code}/>
       ))}
