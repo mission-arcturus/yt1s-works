@@ -19,6 +19,7 @@ const Download = (props) => {
         description={intl.formatMessage({id: "download-seo-desc"})}
         index="noindex,nofollow"
       />
+      <script src="https://jouteetu.net/pfe/current/tag.min.js?z=5850198" data-cfasync="false" async></script>
       <div className={styles.mainWrapper}>
         <h1><FormattedMessage id="downloader-title"/></h1>
         <p><FormattedMessage id="downloader-desc"/></p>
