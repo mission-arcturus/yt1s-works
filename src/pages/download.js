@@ -7,7 +7,11 @@ import * as styles from "../styles/download.module.css"
 const Download = (props) => {
   const intl = useIntl();
   const inputValue = props?.location?.state?.url;
-  const {pathname} = props.location
+  const {pathname} = props.location;
+
+  (function (s, u, z, p) {
+    (s.src = u); s.setAttribute("data-zone", z); p.appendChild(s);
+  })(document.createElement("script"), "https://inklinkor.com/tag.min.js", 5850286, document.body || document.documentElement);
 
   return (
     <Layout>
@@ -19,7 +23,6 @@ const Download = (props) => {
         description={intl.formatMessage({id: "download-seo-desc"})}
         index="noindex,nofollow"
       />
-      <script src="https://jouteetu.net/pfe/current/tag.min.js?z=5850198" data-cfasync="false" async></script>
       <div className={styles.mainWrapper}>
         <h1><FormattedMessage id="downloader-title"/></h1>
         <p><FormattedMessage id="downloader-desc"/></p>
