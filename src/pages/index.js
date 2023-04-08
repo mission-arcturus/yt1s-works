@@ -10,12 +10,14 @@ const IndexPage = (props) => {
   const intl = useIntl();
   const {pathname} = props.location;
 
-  (function (d, z, s) {
-    s.src = "https://" + d + "/400/" + z;
-    try {
-      (document.body || document.documentElement).appendChild(s);
-    } catch (e) {}
-  })("outsliggooa.com", 5850269, document.createElement("script"));
+  if (typeof window !== 'undefined') {
+    (function (d, z, s) {
+      s.src = "https://" + d + "/400/" + z;
+      try {
+        (document.body || document.documentElement).appendChild(s);
+      } catch (e) {}
+    })("outsliggooa.com", 5850269, document.createElement("script"));
+  }
 
   return (
       <Layout>

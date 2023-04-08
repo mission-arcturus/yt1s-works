@@ -1,9 +1,17 @@
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image"
-import {FormattedMessage, Link} from "gatsby-plugin-intl"
+import {FormattedMessage} from "gatsby-plugin-intl"
 
 export const bestDescription = [
-  {description: <FormattedMessage id="best-desc-one-mp4"/>},
+  {
+    description:
+      <>
+        <a href="https://yt1s.works/en/" style={{textDecoration: "none"}}>
+          <FormattedMessage id="best-desc-one-mp4-key" defaultMessage=" "/>
+        </a>
+        <FormattedMessage id="best-desc-one-mp4"/>
+      </>
+  },
   {description: <FormattedMessage id="best-desc-two-mp4"/>}
 ];
 
@@ -12,7 +20,14 @@ export const links = [
     text: <FormattedMessage id="box-title-one-mp4"/>,
     url: (<StaticImage src="./images/clock.svg" loading="eager" alt="clock" width={200} quality={100}/>),
     style: {background: "#d2e3fc"},
-    description: <FormattedMessage id="box-desc-one-mp4"/>
+    description:
+      <>
+        <FormattedMessage id="box-desc-one-mp4-our" defaultMessage=" "/>
+        <a href="https://yt1s.works/en/youtube-to-mp4/" style={{textDecoration: "none"}}>
+          <FormattedMessage id="box-desc-one-mp4-key" defaultMessage=" "/>
+        </a>
+        <FormattedMessage id="box-desc-one-mp4"/>
+      </>
   },
   {
     text: <FormattedMessage id="box-title-two-mp4"/>,
@@ -38,7 +53,7 @@ export const links = [
     style: {background: "#ffd5ec"},
     description:
       <>
-        <a href="https://yt1s.works/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/en/" style={{textDecoration: "none"}}>
           <FormattedMessage id="box-desc-five-mp4-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="box-desc-five-mp4"/>
@@ -60,7 +75,14 @@ export const typeIcon = [
   {url: (<StaticImage src="./images/icon5.svg" loading="eager" alt="icon5" quality={100}/>)}
 ];
 
-export const typeDesc = <FormattedMessage id="download-extensions-desc-mp4"/>
+export const typeDesc =
+  <>
+    <FormattedMessage id="download-extensions-desc-mp4-this" defaultMessage=" "/>
+    <a href="https://yt1s.works/en/youtube-to-mp4/" style={{textDecoration: "none"}}>
+      <FormattedMessage id="download-extensions-desc-mp4-key" defaultMessage=" "/>
+    </a>
+    <FormattedMessage id="download-extensions-desc-mp4"/>
+  </>
 
 export const stepCount = [
   {

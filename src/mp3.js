@@ -1,9 +1,18 @@
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image"
-import {FormattedMessage, Link} from "gatsby-plugin-intl"
+import {FormattedMessage} from "gatsby-plugin-intl"
 
 export const bestDescription = [
-  {description: <FormattedMessage id="best-desc-one-mp3"/>},
+  {
+    description:
+      <>
+        <FormattedMessage id="best-desc-one-mp3-our" defaultMessage=" "/>
+        <a href="https://yt1s.works/en/youtube-to-mp3/" style={{textDecoration: "none"}}>
+          <FormattedMessage id="best-desc-one-mp3-key" defaultMessage=" "/>
+        </a>
+        <FormattedMessage id="best-desc-one-mp3"/>
+      </>
+  },
   {description: <FormattedMessage id="best-desc-two-mp3"/>}
 ];
 
@@ -14,7 +23,7 @@ export const links = [
     style: {background: "#d2e3fc"},
     description:
       <>
-        <a href="https://yt1s.works/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/en/youtube-to-mp3/" style={{textDecoration: "none"}}>
           <FormattedMessage id="box-desc-one-mp3-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="box-desc-one-mp3"/>
@@ -24,7 +33,13 @@ export const links = [
     text: <FormattedMessage id="box-title-two-mp3"/>,
     url: (<StaticImage src="./images/limit.svg" loading="eager" alt="limit" width={200} quality={100}/>),
     style: {background: "#fad2cf"},
-    description: <FormattedMessage id="box-desc-two-mp3"/>
+    description:
+      <>
+        <a href="https://yt1s.works/en/youtube-to-mp3/" style={{textDecoration: "none"}}>
+          <FormattedMessage id="box-desc-two-mp3-key" defaultMessage=" "/>
+        </a>
+        <FormattedMessage id="box-desc-two-mp3"/>
+      </>
   },
   {
     text: <FormattedMessage id="box-title-three-mp3"/>,
@@ -60,7 +75,13 @@ export const typeIcon = [
   {url: (<StaticImage src="./images/icon5.svg" loading="eager" alt="icon5" quality={100}/>)}
 ];
 
-export const typeDesc = <FormattedMessage id="download-extensions-desc-mp3"/>
+export const typeDesc =
+  <>
+    <a href="https://yt1s.works/en/" style={{textDecoration: "none"}}>
+      <FormattedMessage id="download-extensions-desc-mp3-key" defaultMessage=" "/>
+    </a>
+    <FormattedMessage id="download-extensions-desc-mp3"/>
+  </>
 
 export const stepCount = [
   {
