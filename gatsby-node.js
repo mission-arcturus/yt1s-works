@@ -3,9 +3,8 @@ exports.createPages = async ({ actions }) => {
   
     createRedirect({
       fromPath: `/en/youtube-to-mp4/`,
-      isPermanent: true,
+      isPermanent: false,
       redirectInBrowser: true,
       toPath: `/youtube-to-mp4/`,
-      statusCode: 301,
     })
   }
