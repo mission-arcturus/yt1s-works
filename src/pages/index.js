@@ -6,6 +6,16 @@ import Converter from "../components/converter"
 import Sections from "../components/sections"
 import * as styles from "../styles/index.module.css"
 
+export const getServerData = async () => {
+  const headers = new Map();
+  headers.set('Location', '/');
+
+  return {
+    status: 301,
+    headers: headers
+  }
+}
+
 const IndexPage = (props) => {
   const intl = useIntl();
   const {pathname} = props.location;
