@@ -12,8 +12,8 @@ module.exports = {
       resolve: `gatsby-plugin-intl`,
       options: {
         path: `${__dirname}/src/intl`,
-        languages: [`eng`, `en`, `de`, `es`, `fr`, `hi`, `id`, `it`, `ja`, `ko`, `my`, `ms`, `tl-ph`, `pt`, `ru`, `th`, `tr`, `vi`, `zh-cn`, `zh-tw`, `ar`, `bn`],
-        defaultLanguage: `eng`,
+        languages: [`en`, `de`, `es`, `fr`, `hi`, `id`, `it`, `ja`, `ko`, `my`, `ms`, `tl-ph`, `pt`, `ru`, `th`, `tr`, `vi`, `zh-cn`, `zh-tw`, `ar`, `bn`],
+        defaultLanguage: `en`,
         redirect: false,
       }
     },
@@ -63,6 +63,35 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-257217301-1",
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        RewriteBase: '/',
+        https: true,
+        www: true,
+        SymLinksIfOwnerMatch: true,
+        ErrorDocument: `
+          ErrorDocument 401 /error_pages/401.html
+          ErrorDocument 404 /error_pages/404.html
+          ErrorDocument 500 /error_pages/500.html
+        `,
+        redirect: [
+          'RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]',
+          {
+            from: 'https://yt1s.works/en/',
+            to: 'https://yt1s.works/',
+          },
+          {
+            from: 'https://yt1s.works/en/youtube-to-mp4/',
+            to: 'https://yt1s.works/',
+          },
+        ],
+        custom: `
+            # This is a custom rule!
+            # This is a another custom rule!
+        `,
       },
     },
   ],
