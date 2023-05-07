@@ -68,10 +68,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-htaccess',
       options: {
-        RewriteBase: '/',
+        RewriteBase: true,
         https: true,
-        www: true,
+        www: false,
         SymLinksIfOwnerMatch: true,
+        host: 'yt1s.works/',
         ErrorDocument: `
           ErrorDocument 401 /error_pages/401.html
           ErrorDocument 404 /error_pages/404.html
@@ -80,12 +81,12 @@ module.exports = {
         redirect: [
           'RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]',
           {
-            from: 'https://yt1s.works/en/',
-            to: 'https://yt1s.works/',
+            from: 'yt1s.works/en/',
+            to: 'yt1s.works/',
           },
           {
-            from: 'https://yt1s.works/en/youtube-to-mp4/',
-            to: 'https://yt1s.works/',
+            from: 'yt1s.works/en/youtube-to-mp4/',
+            to: 'yt1s.works/',
           },
         ],
         custom: `
