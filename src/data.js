@@ -14,7 +14,7 @@ export const navigationList = [
 ];
 
 export const languageName = {
-  en: "English",
+  "eng": "English",
   de: "Deutsch",
   es: "Español",
   fr: "Français",
@@ -37,7 +37,7 @@ export const languageName = {
   bn: "বাঙালি",
 };
 export const localLang = [
-  {code: "en", text: "English"},
+  {code: "eng", text: "English"},
   {code: "de", text: "Deutsch"},
   {code: "es", text: "Español"},
   {code: "fr", text: "Français"},
@@ -61,7 +61,7 @@ export const localLang = [
 ];
 
 export const locales = [
-  {code: "en"},
+  {code: "eng"},
   {code: "de"},
   {code: "es"},
   {code: "fr"},

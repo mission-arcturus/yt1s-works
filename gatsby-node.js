@@ -1,25 +1,9 @@
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ actions }) => {
     const { createRedirect } = actions
-
+  
     createRedirect({
-        fromPath: '/',
-        exactPath: true,
-        isPermanent: true,
-        redirectInBrowser: true,
-        toPath: '/en2/'
-    });
-    createRedirect({
-        fromPath: '/en/',
-        exactPath: true,
-        isPermanent: true,
-        redirectInBrowser: true,
-        toPath: '/en2/'
-    });
-    createRedirect({
-        fromPath: '/en/en2/',
-        exactPath: true,
-        isPermanent: true,
-        redirectInBrowser: true,
-        toPath: '/en2/'
-    });
-}
+      fromPath: `https://yt1s.works/en/youtube-to-mp4/`,
+      toPath: `https://yt1s.works/youtube-to-mp4/`,
+      statusCode: 301,
+    })
+  }
