@@ -59,6 +59,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-client-side-redirect`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
