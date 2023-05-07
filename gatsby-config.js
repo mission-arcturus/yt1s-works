@@ -64,6 +64,31 @@ module.exports = {
       options: {
         trackingId: "UA-257217301-1",
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        allPageHeaders: [
+          `X-Content-Type-Options: nosniff`,
+          `X-Frame-Options: DENY`,
+          `Referrer-Policy: same-origin`,
+          `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`,
+          `cache-control: public, max-age=31536000, immutable`,
+        ],
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+        transformHeaders: (headers, path) => {
+          if (path === "/youtube-to-mp4/") {
+            return {
+              "cache-control": "public, max-age=0, must-revalidate",
+              location: "/youtube-to-mp3/",
+            };
+          }
+
+          return headers;
+        },
+      },
+    },
   ],
 };
