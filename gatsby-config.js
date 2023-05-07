@@ -64,36 +64,6 @@ module.exports = {
       options: {
         trackingId: "UA-257217301-1",
       },
-    },
-    {
-      resolve: 'gatsby-plugin-htaccess',
-      options: {
-        RewriteBase: true,
-        https: true,
-        www: false,
-        SymLinksIfOwnerMatch: true,
-        host: 'yt1s.works/',
-        ErrorDocument: `
-          ErrorDocument 401 /error_pages/401.html
-          ErrorDocument 404 /error_pages/404.html
-          ErrorDocument 500 /error_pages/500.html
-        `,
-        redirect: [
-          'RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]',
-          {
-            from: 'yt1s.works/en/',
-            to: 'yt1s.works/',
-          },
-          {
-            from: 'yt1s.works/en/youtube-to-mp4/',
-            to: 'yt1s.works/',
-          },
-        ],
-        custom: `
-            # This is a custom rule!
-            # This is a another custom rule!
-        `,
-      },
-    },
+    }
   ],
 };
