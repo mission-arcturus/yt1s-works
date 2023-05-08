@@ -1,6 +1,0 @@
-domains:
-  - domain: https://urchin-app-voklr.ondigitalocean.app/
-    redirects:
-      - from: /youtube-to-mp4/
-        to: /youtube-to-mp3/
-        status: 301
