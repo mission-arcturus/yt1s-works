@@ -64,17 +64,6 @@ module.exports = {
       options: {
         trackingId: "UA-257217301-1",
       },
-    },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          "/youtube-to-mp4/": [
-            "cache-control: public, max-age=0, must-revalidate",
-            "location: /youtube-to-mp3/",
-          ],
-        },
-      },
-    },
+    }
   ],
 };
