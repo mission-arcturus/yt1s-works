@@ -54,7 +54,6 @@ const Converter = () => {
           <FormattedMessage id="convert-btn"/>
         </button>
       </div>
-      <a href="https://y2meta.mobi/">Y2meta</a>
     </>
   )
 };
