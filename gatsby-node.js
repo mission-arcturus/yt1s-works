@@ -5,6 +5,6 @@ exports.createPages = async ({ actions }) => {
     fromPath: '/youtube-to-mp4/',
     toPath: '/youtube-to-mp3/',
     isPermanent: true,
-    redirectInBrowser: false,
+    redirectInBrowser: true,
   });
 };
