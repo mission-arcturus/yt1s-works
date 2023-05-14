@@ -7,7 +7,7 @@ export const bestDescription = [
     description:
       <>
         <FormattedMessage id="best-desc-one-mp3-our" defaultMessage=" "/>
-        <a href="https://yt1s.works/en/youtube-to-mp3/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/youtube-to-mp3/" style={{textDecoration: "none"}}>
           <FormattedMessage id="best-desc-one-mp3-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="best-desc-one-mp3"/>
@@ -23,7 +23,7 @@ export const links = [
     style: {background: "#d2e3fc"},
     description:
       <>
-        <a href="https://yt1s.works/en/youtube-to-mp3/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/youtube-to-mp3/" style={{textDecoration: "none"}}>
           <FormattedMessage id="box-desc-one-mp3-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="box-desc-one-mp3"/>
@@ -35,7 +35,7 @@ export const links = [
     style: {background: "#fad2cf"},
     description:
       <>
-        <a href="https://yt1s.works/en/youtube-to-mp3/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/youtube-to-mp3/" style={{textDecoration: "none"}}>
           <FormattedMessage id="box-desc-two-mp3-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="box-desc-two-mp3"/>
@@ -77,7 +77,7 @@ export const typeIcon = [
 
 export const typeDesc =
   <>
-    <a href="https://yt1s.works/en/" style={{textDecoration: "none"}}>
+    <a href="https://yt1s.works/ena/" style={{textDecoration: "none"}}>
       <FormattedMessage id="download-extensions-desc-mp3-key" defaultMessage=" "/>
     </a>
     <FormattedMessage id="download-extensions-desc-mp3"/>

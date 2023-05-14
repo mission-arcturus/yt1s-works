@@ -4,7 +4,12 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "/en/",
+        "destination": "/ena/",
+        "type": 301
+      },
+      {
+        "source": "/en/",
+        "destination": "/ena/",
         "type": 301
       },
       {
@@ -14,6 +19,16 @@
       },
       {
         "source": "/en/youtube-to-mp4/",
+        "destination": "/youtube-to-mp4/",
+        "type": 301
+      },
+      {
+        "source": "/ena/youtube-to-mp3/",
+        "destination": "/youtube-to-mp3/",
+        "type": 301
+      },
+      {
+        "source": "/ena/youtube-to-mp4/",
         "destination": "/youtube-to-mp4/",
         "type": 301
       }

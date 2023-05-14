@@ -6,7 +6,7 @@ export const bestDescription = [
   {
     description:
       <>
-        <a href="https://yt1s.works/en/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/ena/" style={{textDecoration: "none"}}>
           <FormattedMessage id="best-desc-one-mp4-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="best-desc-one-mp4"/>
@@ -23,7 +23,7 @@ export const links = [
     description:
       <>
         <FormattedMessage id="box-desc-one-mp4-our" defaultMessage=" "/>
-        <a href="https://yt1s.works/en/youtube-to-mp4/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/youtube-to-mp4/" style={{textDecoration: "none"}}>
           <FormattedMessage id="box-desc-one-mp4-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="box-desc-one-mp4"/>
@@ -53,7 +53,7 @@ export const links = [
     style: {background: "#ffd5ec"},
     description:
       <>
-        <a href="https://yt1s.works/en/" style={{textDecoration: "none"}}>
+        <a href="https://yt1s.works/ena/" style={{textDecoration: "none"}}>
           <FormattedMessage id="box-desc-five-mp4-key" defaultMessage=" "/>
         </a>
         <FormattedMessage id="box-desc-five-mp4"/>
@@ -78,7 +78,7 @@ export const typeIcon = [
 export const typeDesc =
   <>
     <FormattedMessage id="download-extensions-desc-mp4-this" defaultMessage=" "/>
-    <a href="https://yt1s.works/en/youtube-to-mp4/" style={{textDecoration: "none"}}>
+    <a href="https://yt1s.works/youtube-to-mp4/" style={{textDecoration: "none"}}>
       <FormattedMessage id="download-extensions-desc-mp4-key" defaultMessage=" "/>
     </a>
     <FormattedMessage id="download-extensions-desc-mp4"/>
