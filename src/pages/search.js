@@ -26,7 +26,7 @@ const Search = (props) => {
       })
   }, [inputValue]);
 
-  const handleClickVideo = (value) => {debugger
+  const handleClickVideo = (value) => {
     navigate(`/download`, {state: {url: value}})
   };
 
