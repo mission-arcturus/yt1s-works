@@ -26,8 +26,8 @@ const Search = (props) => {
       })
   }, [inputValue]);
 
-  const handleClickVideo = (value) => {
-    navigate(`/download`, {state: {url: value}})
+  const handleClickVideo = (value, item) => {
+    navigate(`/download`, {state: {url: value, item}})
   };
 
   return (
@@ -53,7 +53,7 @@ const Search = (props) => {
             {list.map((item, i) => (
               <li key={i}
                   className={styles.videoBox}
-                  onClick={() => handleClickVideo(item.url)}>
+                  onClick={() => handleClickVideo(item.url, item)}>
                 <img
                   className={styles.videoImg}
                   src={item.imgSrc}
