@@ -83,6 +83,7 @@ const Download = (props) => {
             <iframe
               className={styles.iframe}
               src={`https://ytconvert.me/api/widgetv2?url=${inputValue}`}
+              sandbox="allow-scripts allow-same-origin allow-presentation allow-downloads allow-forms"
               width="100%" height="100%" allowTransparency="true" scrolling="yes" style={{border: "none"}}/>
           </div>
         }
